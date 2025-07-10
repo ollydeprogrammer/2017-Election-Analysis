@@ -1,0 +1,1786 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='LeaveRemainAnalysis' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Leave_Remain_Analysis' inline='true' name='federated.0gieuol0b9desv15qew4w02khc7f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Leave_Remain_Analysis' name='textscan.03feys01mdw84q1fpvftp052o25j'>
+            <connection class='textscan' directory='C:/Users/ollyd/Data Analysis/Election Analysis/Analysed Data' filename='Leave_Remain_Analysis.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03feys01mdw84q1fpvftp052o25j' name='Leave_Remain_Analysis.csv' table='[Leave_Remain_Analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='party' ordinal='0' />
+            <column datatype='integer' name='Total wins' ordinal='1' />
+            <column datatype='integer' name='Leave Wins' ordinal='2' />
+            <column datatype='integer' name='Remain Wins' ordinal='3' />
+            <column datatype='real' name='Remain Percentage' ordinal='4' />
+            <column datatype='real' name='Remain wins / Total Remain Wins (%)' ordinal='5' />
+            <column datatype='real' name='Leave wins / Total Leave Wins (%)' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[party]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>party</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total wins]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Total wins</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leave Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Leave Wins]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Leave Wins</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remain Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Remain Wins]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Remain Wins</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remain Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Remain Percentage]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Remain Percentage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remain wins / Total Remain Wins (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Remain wins / Total Remain Wins (%)]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Remain wins / Total Remain Wins (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leave wins / Total Leave Wins (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Leave wins / Total Leave Wins (%)]</local-name>
+            <parent-name>[Leave_Remain_Analysis.csv]</parent-name>
+            <remote-alias>Leave wins / Total Leave Wins (%)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' hidden='true' name='[Remain Percentage]' role='measure' type='quantitative' />
+      <column caption='Leave_Remain_Analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]' role='measure' type='quantitative' />
+      <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+      <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/ollyd/AppData/Local/Temp/TableauTemp/#TableauTemp_0v6pru61xahyic1173d4r1ucjotj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/09/2025 02:41:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>party</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[party]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>party</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total wins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total wins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total wins</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Leave Wins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Leave Wins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Leave Wins</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Remain Wins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Remain Wins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remain Wins</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Remain wins / Total Remain Wins (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Remain wins / Total Remain Wins (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remain wins / Total Remain Wins (%)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Leave wins / Total Leave Wins (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Leave wins / Total Leave Wins (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Leave wins / Total Leave Wins (%)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Leave_Remain_Analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:party:nk]' type='palette'>
+            <map to='#419eb6'>
+              <bucket>&quot;Ulster Unionist&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sinn Fein&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Conservative&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Plaid Cymru&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Green&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Democratic Unionist&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;UKIP&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Independent&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Labour&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SDLP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Speaker&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SNP&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Liberal Democrat&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Leave_Remain_Analysis.csv' id='Leave_Remain_Analysis.csv_26B7281762C34F7FBD5C415ADBCC6243'>
+            <properties context=''>
+              <relation connection='textscan.03feys01mdw84q1fpvftp052o25j' name='Leave_Remain_Analysis.csv' table='[Leave_Remain_Analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='party' ordinal='0' />
+                  <column datatype='integer' name='Total wins' ordinal='1' />
+                  <column datatype='integer' name='Leave Wins' ordinal='2' />
+                  <column datatype='integer' name='Remain Wins' ordinal='3' />
+                  <column datatype='real' name='Remain Percentage' ordinal='4' />
+                  <column datatype='real' name='Remain wins / Total Remain Wins (%)' ordinal='5' />
+                  <column datatype='real' name='Leave wins / Total Leave Wins (%)' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='%Seats Won Leave'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Percentage of Seats Won in the 2017 Election that voted Leave During the 2016 Brexit Referendum</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leave_Remain_Analysis' name='federated.0gieuol0b9desv15qew4w02khc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gieuol0b9desv15qew4w02khc7f'>
+            <column datatype='real' name='[Leave wins / Total Leave Wins (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Remain wins / Total Remain Wins (%)]' role='measure' type='quantitative' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column-instance column='[Leave wins / Total Leave Wins (%)]' derivation='Sum' name='[sum:Leave wins / Total Leave Wins (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Remain wins / Total Remain Wins (%)]' derivation='Sum' name='[sum:Remain wins / Total Remain Wins (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='636' />
+            <format attr='height' value='357' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_16' value='#fafafa00' />
+            <format attr='stroke-size' id='annotation_16' value='0' />
+            <format attr='line-visibility' id='annotation_16' value='off' />
+            <format attr='stroke-size' id='annotation_18' value='0' />
+            <format attr='line-visibility' id='annotation_18' value='off' />
+            <format attr='border-color' id='annotation_18' value='#d7d7d700' />
+            <format attr='border-style' id='annotation_18' value='solid' />
+            <format attr='fill-color' id='annotation_18' value='#fafafa00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+              <wedge-size column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]' />
+              <size column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]' />
+              <lod column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                  <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]</field>
+                  <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Labour&quot;</value>
+                <value>36.100000000000001</value>
+                <value>35.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='16' mark-position='1' pullback='5' text-width='193'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>The Conservatives</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#ffffff'><![CDATA[<[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]>%]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Conservative&quot;</value>
+                    <value>61.0</value>
+                    <value>33.299999999999997</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-97' y='7' />
+          </annotation>
+          <annotation class='point' id='18' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontsize='12'><![CDATA[The <[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]> Party]]></run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'><![CDATA[ <[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]>%]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Labour&quot;</value>
+                    <value>36.100000000000001</value>
+                    <value>35.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='92' y='25' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{87143420-26CB-43D5-910C-B3CAD9D11D93}' />
+    </worksheet>
+    <worksheet name='%Seats Won Remain'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Percentage of Seats Won in the 2017 Election that voted Leave During the 2016 Brexit Referendum</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leave_Remain_Analysis' name='federated.0gieuol0b9desv15qew4w02khc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gieuol0b9desv15qew4w02khc7f'>
+            <column datatype='real' name='[Remain wins / Total Remain Wins (%)]' role='measure' type='quantitative' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column-instance column='[Remain wins / Total Remain Wins (%)]' derivation='Sum' name='[sum:Remain wins / Total Remain Wins (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='993' />
+            <format attr='height' value='497' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='border-width' id='annotation_1' value='0' />
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+            <format attr='stroke-size' id='annotation_1' value='0' />
+            <format attr='line-visibility' id='annotation_1' value='off' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='stroke-size' id='annotation_2' value='0' />
+            <format attr='line-visibility' id='annotation_2' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+              <wedge-size column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.6151933670043945' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontsize='12'><![CDATA[The <[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]> Party]]></run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#ffffff' fontsize='12'><![CDATA[ <[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]>%]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Labour&quot;</value>
+                    <value>35.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-2' y='-59' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='163'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontsize='12'><![CDATA[The <[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]>s]]></run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#ffffff' fontsize='12'><![CDATA[ <[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]>%]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Conservative&quot;</value>
+                    <value>33.299999999999997</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-72' y='29' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontsize='14'>SNP</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#ffffff' fontsize='14'>Æ </run>
+              <run bold='true' fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]>%]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+                      <field>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain wins / Total Remain Wins (%):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;SNP&quot;</value>
+                    <value>22.899999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='57' y='59' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{D4D9F7E6-CF39-4510-AEBD-D7ABFB109EA6}' />
+    </worksheet>
+    <worksheet name='Total Seat Wins'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Biggest Parties During the 2017 General Election</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leave_Remain_Analysis' name='federated.0gieuol0b9desv15qew4w02khc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gieuol0b9desv15qew4w02khc7f'>
+            <column datatype='integer' name='[Total wins]' role='measure' type='quantitative' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column-instance column='[Total wins]' derivation='Sum' name='[sum:Total wins:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1114' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Total wins:qk]' />
+              <text column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+              <color column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>The &lt;</run>
+                <run>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</run>
+                <run>&gt; Party</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C66964E9-D67E-43F3-90F2-74781EB5134A}' />
+    </worksheet>
+    <worksheet name='Total Seats Won Remain'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Party wins in the 2017 General Election in &quot;Vote Remain&quot; Consitutencies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leave_Remain_Analysis' name='federated.0gieuol0b9desv15qew4w02khc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gieuol0b9desv15qew4w02khc7f'>
+            <column datatype='integer' name='[Remain Wins]' role='measure' type='quantitative' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column-instance column='[Remain Wins]' derivation='Sum' name='[sum:Remain Wins:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+              <lod column='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain Wins:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Remain Wins:qk]</rows>
+        <cols>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</cols>
+      </table>
+      <simple-id uuid='{C886655A-F53B-49C5-A353-5E740F92C78C}' />
+    </worksheet>
+    <worksheet name='Total Seats won Leave'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Party wins in the 2017 General Election in &quot;Vote Leave&quot; Consitutencies </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leave_Remain_Analysis' name='federated.0gieuol0b9desv15qew4w02khc7f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gieuol0b9desv15qew4w02khc7f'>
+            <column datatype='integer' name='[Leave Wins]' role='measure' type='quantitative' />
+            <column-instance column='[party]' derivation='None' name='[none:party:nk]' pivot='key' type='nominal' />
+            <column caption='Party' datatype='string' name='[party]' role='dimension' type='nominal' />
+            <column-instance column='[Leave Wins]' derivation='Sum' name='[sum:Leave Wins:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave Wins:qk]' field-type='quantitative' max='261' min='14' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave Wins:qk]</rows>
+        <cols>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</cols>
+      </table>
+      <simple-id uuid='{C925AD13-7ABA-4578-B4BA-59E94481F8E0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98684' id='15' param='horz' type-v2='layout-flow' w='99318' x='341' y='658'>
+            <zone h='98684' id='4' type-v2='layout-basic' w='99318' x='341' y='658'>
+              <zone h='54934' id='7' param='horz' type-v2='layout-flow' w='98636' x='682' y='43750'>
+                <zone h='54934' id='5' type-v2='layout-basic' w='98636' x='682' y='43750'>
+                  <zone h='54934' id='3' name='Total Seats Won Remain' w='26265' x='682' y='43750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='54934' id='9' name='Total Seats won Leave' w='27289' x='26947' y='43750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='54934' id='11' name='%Seats Won Remain' w='45082' x='54236' y='43750'>
+                    <layout-cache fixed-size-h='585' fixed-size-w='993' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='42434' id='10' name='Total Seat Wins' w='46338' x='682' y='1316'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42434' id='8' name='Total Seats Won Remain' pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type-v2='color' w='5960' x='93358' y='1316'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42434' id='13' name='%Seats Won Leave' w='46338' x='47020' y='1316'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98684' id='16' param='vert' type-v2='layout-flow' w='99318' x='341' y='658'>
+                <zone fixed-size='280' h='42434' id='10' is-fixed='true' name='Total Seat Wins' w='46338' x='682' y='1316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42434' id='13' is-fixed='true' name='%Seats Won Leave' w='46338' x='47020' y='1316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54934' id='3' is-fixed='true' name='Total Seats Won Remain' w='26265' x='682' y='43750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='42434' id='8' name='Total Seats Won Remain' pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type-v2='color' w='5960' x='93358' y='1316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54934' id='9' is-fixed='true' name='Total Seats won Leave' w='27289' x='26947' y='43750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54934' id='11' is-fixed='true' name='%Seats Won Remain' w='45082' x='54236' y='43750'>
+                  <layout-cache fixed-size-h='585' fixed-size-w='993' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E0201F5-6E02-4B54-9EAB-699E8AF3C698}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Seat Wins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{398AEF53-1402-4C96-B52D-035AB2649B42}' />
+    </window>
+    <window class='worksheet' name='Total Seats Won Remain'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E303EA1B-B24B-46C0-9FA7-B11D4D6FE8F0}' />
+    </window>
+    <window class='worksheet' name='%Seats Won Remain'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B1C01EEF-0E21-40FB-8C65-E231BE3A60CE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='%Seats Won Leave' />
+        <viewpoint name='%Seats Won Remain' />
+        <viewpoint name='Total Seat Wins' />
+        <viewpoint name='Total Seats Won Remain'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Seats won Leave'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{4FC9CFA0-BCC7-4976-AB58-8A82775FF113}' />
+    </window>
+    <window class='worksheet' name='Total Seats won Leave'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3DAD83AB-6555-4F0E-A8FE-DD907A024270}' />
+    </window>
+    <window class='worksheet' name='%Seats Won Leave'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gieuol0b9desv15qew4w02khc7f].[sum:Leave wins / Total Leave Wins (%):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gieuol0b9desv15qew4w02khc7f].[none:party:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FBF60761-470D-48A0-AAD9-517D45C676BF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='%Seats Won Leave' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='%Seats Won Remain' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Seat Wins' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total Seats Won Remain' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAJLklEQVR4nO3dS28b1xnG8efMDG8zvIqkKMuSBfeCokAXBQoDBtquuyn6ZQp03W2/Q/fd
+      t1+giyJFFw1Qp4lT1EASWbJu1oUSSfEyc04XTpwIVIp5pXDE4fv8djYI+wzFP8kZvjo0zjkH
+      IqW8h14A0UNiAKQaA8ipT198iJevPodzDs452HiCy+H4/Z8pneChF0B388UXu5gEpzh+9U9M
+      m9uozi6xPyrjB50igrCNn/z4+w+9xFzgK0BObT/9IX7zq18i9iPUwwg//dkztGsVXJwcoLO5
+      +dDLyw1z36tAzjkYY76r9dA97e7uYvvJE/Anks69A0iSBL7vf1frIcoU3wKRagyAVGMApBoD
+      INUYAKnGAEg1BkCqMQBSjQGQaqJhuOFVH/3hBJUAiE0R3XZzUesiyoQogH7/HKcX16iGBRTD
+      Bqy1sNZy/JZySxRA4BcQli2iWoThaALP8+Cc4ywQ5RaH4Ug1/kLMHV3/6wUmL1+mum1hawvR
+      L36+4BXRXTCAO5p8/DEu//yXVLetPHvGAJYUL4OSagyAVGMApBoDINUYAKnGAEg1BkCqMQBS
+      TfRB2Ff7ThoDOGfgedx+ifJNFMDh/i4uBlNEYYDYBni6swXg6zDiJN1YkTFA4Of7xUc6QMWJ
+      2eUkCsBaByQJEq8M370bg7bWAgD+8ck+/vCnD1L9O2u1Cv74u1/LV7tEJA/ob95PtFxEAXS7
+      6yiEY1TLAWL4N8ahjSd4RjfI/QSpJ9gP1RiT++NdVaIAipUQ65VwUWshyly+34gT3RMDINUY
+      AKnGAEg1BkCqMQBSjQGQagyAVGMApBoDINVEoxCDy3Ps7h2hUQ9RrNS5OS7lniiAqFpHtTaE
+      7zlcXl2h3aq/3xzX2iT9P+SAOI6la10qVjgNmvfjXVWiAJJ4jHZnA5PhKZx/cxrU8wTTjgYI
+      gnxvSiedBs378a4q2e7QxQgBgKjSW9ByiLLFk2BSjQGQagyAVGMApBoDINUYAKnGAEg1BkCq
+      MQBSjQGQaqJRiOFVH/3BGM1GiNgGqFcri1oXUSZEAVSiGk5Oz3F6NoOzFtVwi9OgKXAadHnJ
+      NsedDlEKm5gOzxA7j9OgKXEadHnJpkHLNTwqA841FrUeokzd6WnJCJ79iJYZrwKRagyAVGMA
+      pBoDINUYAKnGAEg1BkCqMQBSjQGQaqJPgp1zmM1m8D0P1gGFAudbKN9Ej+DjN68xNSXEoz6q
+      a+votBpwzr371nTBdCQg+6b1ZSQ82twf76oSBTCeTHB9PUKj28Tbk7doN+sA8H4kWsJaK7r9
+      spEcr0P+j3dViQLYerKD/tU1ir5D9Lh+YxzaeLLTCd8XjE8vIdE4NEzuj3dViQLwgyLWWsVF
+      rYUoc7wKRKoxAFKNAZBqDIBUYwCkGgMg1RgAqcYASDUGQKoxAFJNNgw3uMTZYIJK4DB1AXrd
+      tUWtiygTogAOjg4BU0JSDoBkAmub3Bw3BW6Ou7xEAbSaLZz3R/Dg4PwCN8dNiZvjLi/RT6XZ
+      7qLZXtRSiLLHk2BSjQGQagyAVGMApBoDINUYAKnGAEg1BkCqMQBSjQGQarIvyk4STGYzFHwf
+      iXMoFblJFuWbbBp0/zVcoYLp4AK1dg+dVuHLSVAr3hw373tlSjfHzfvx3ktylf62foQs35iI
+      Amg0Gvhs9w16G228PXmLTuvrb4x3wodE7gkOV9k9c4NLxhj++7epbx/+6PfwypsLXNFNogAK
+      pRK2d56g6DmE2w0YY2CMged5MEZWrSfcTHfZCKahYWByf7x35ZzsuI3xMr2vRAGUyiFK5UUt
+      hSh7Op+WiL7EAEg1BkCqMQBSjQGQagyAVGMApBoDINUYAKnGAEg10SjEydEBptaHZ8eYugA7
+      W9kNLREtgiiAYiHAydEZqvUqPBvDWsvNcVNQvTmu5HEBILEJXIb3lSiAICigVm+gVgkQI+Dm
+      uClp3hzXJbIHs+/58DO8r0T/U1RvIqovailE2eNJMKnGAEg1BkCq3RrAeDzG4cGB6t9lJR1u
+      DeDFh3/HB3/9Gy6VXrkjPW4NoFSqYGPnKSKdV+5IkbmHuLMJ4jjGbKZuoxNSaC6AyeAMM6+M
+      MAwg2PmDKJfm3gIVSiEGZ0d48dFLKN7LjJSYC8AlM8TWx3qvw1cAWnnzp7nGQ3u9h83Nx7ec
+      IDhc9PvwjcPUemh/Y2tEojyae4wHlTo69RL2dvfQe7R+4waD/hk+f32MWgmIWj1Og6bEadD0
+      lmIa9M2bAwTl1tzfX48nmF0PUOvtoH/Zx0Z3jdOgKXAaNL0HnwadDM5QX1vHRX80dxm0u7GJ
+      7sYmnHPodrsZLZFoceZOgkvVNUxH5/j0o08Qf8ur/Fe7QhPl3a2vNevrm9j53kz2ywJEOXTr
+      KMSr//4H5TACr4PSqrv1ST4oFOEH/CSYVt+trwDVqILTw32MZVewiHJn/pNg5xD4AfxiiCJ/
+      XYZW3Pxl0NPP8GrvCKMkgs/3QLTi5j8JDtt41OsBpsRxaFp5twTQwPPnzx9iLUSZ47t8Uk32
+      WZdzOL+4QDEwmLoArXp1QcsiyoYogKv+KXb3TtBZq8EmFo1qyGnQFDgNmt5STIN+m8lkiul4
+      iMm0DBife4OmxGnQ9B58GvT/6fQ20em9mwYlWgV3So2ToLQqeBWIVGMApBoDINUYAKnGAEg1
+      BkCqMQBSjQGQagyAVGMApJpoFOJ6eIXd/SOEZR/lqIVuu7modRFlQhRAsVhEMp0iqDdwfn6O
+      dqvOcegUOA6d3lKPQ49GI9RbaygFHvxmyHHolDgOnd5Sj0PXGi3U+JUAtEJ4EkyqMQBSjQGQ
+      agyAVGMApBoDINUYAKnGAEg1BkCqMQBSTTwNenzaR1QOMHMBHvU6i1oXUSbE06CX/T78oAmX
+      zGCt5TRoCpwGTW/pp0GrUQTfM3BeidOgKXEaNL0cTIO2FrUWoszxJJhUYwCkGgMg1RgAqcYA
+      SDUGQKoxAFKNAZBqDIBUYwCkmmgUwtkEw+sJCj4wTYBaFC5qXUSZkI1Dj65xeHgEm0zQ6j5G
+      NXRwziFJEjhnRf9xksimBJeN5MvCHVzuj/fOrOxxYZ0FMryvRAFcnh8jdj46a22cnJyg06oD
+      ADzPg4Hsy7M9L+fvviTToFiB470j52SPC2NMpvfV/wC4YWI2y90MpgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total Seats won Leave' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
