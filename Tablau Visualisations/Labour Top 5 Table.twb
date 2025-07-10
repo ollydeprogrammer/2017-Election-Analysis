@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Lab_top_5_majority' inline='true' name='federated.0gl95880z0qgyj1bfb9e01jcgmaz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Lab_top_5_majority' name='textscan.1knqdir0g5kvxg1awa0yt06ynmij'>
+            <connection class='textscan' directory='C:/Users/ollyd/Data Analysis/Election Analysis/Analysed Data' filename='Lab_top_5_majority.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1knqdir0g5kvxg1awa0yt06ynmij' name='Lab_top_5_majority.csv' table='[Lab_top_5_majority#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='overall_rank' ordinal='0' />
+            <column datatype='string' name='constituency' ordinal='1' />
+            <column datatype='string' name='region' ordinal='2' />
+            <column datatype='integer' name='winningvotes' ordinal='3' />
+            <column datatype='string' name='secondplace' ordinal='4' />
+            <column datatype='integer' name='secondplacevotes' ordinal='5' />
+            <column datatype='integer' name='vote_majority' ordinal='6' />
+            <column datatype='real' name='winningpct' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[overall_rank]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>overall_rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>constituency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[constituency]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>constituency</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winningvotes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winningvotes]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>winningvotes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>secondplace</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[secondplace]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>secondplace</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>secondplacevotes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[secondplacevotes]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>secondplacevotes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_majority</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vote_majority]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>vote_majority</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winningpct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[winningpct]</local-name>
+            <parent-name>[Lab_top_5_majority.csv]</parent-name>
+            <remote-alias>winningpct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Lab_top_5_majority.csv' datatype='table' name='[__tableau_internal_object_id__].[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]' role='measure' type='quantitative' />
+      <column caption='Constituency' datatype='string' name='[constituency]' role='dimension' type='nominal' />
+      <column caption='Overall Rank' datatype='integer' name='[overall_rank]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Secondplace' datatype='string' name='[secondplace]' role='dimension' type='nominal' />
+      <column caption='Secondplacevotes' datatype='integer' name='[secondplacevotes]' role='measure' type='quantitative' />
+      <column caption='Vote Majority' datatype='integer' name='[vote_majority]' role='measure' type='quantitative' />
+      <column caption='Winningpct' datatype='real' name='[winningpct]' role='measure' type='quantitative' />
+      <column caption='Winningvotes' datatype='integer' name='[winningvotes]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/ollyd/AppData/Local/Temp/TableauTemp/#TableauTemp_1nqahk41vg37ge1dil51t156kxlk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/10/2025 08:35:20 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>overall_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[overall_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overall_rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>constituency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[constituency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>constituency</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winningvotes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[winningvotes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winningvotes</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>secondplace</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[secondplace]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>secondplace</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>secondplacevotes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[secondplacevotes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>secondplacevotes</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_majority</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vote_majority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_majority</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winningpct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[winningpct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winningpct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Lab_top_5_majority.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Lab_top_5_majority.csv' id='Lab_top_5_majority.csv_E8784E43547E42338429C47C53E0A563'>
+            <properties context=''>
+              <relation connection='textscan.1knqdir0g5kvxg1awa0yt06ynmij' name='Lab_top_5_majority.csv' table='[Lab_top_5_majority#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='overall_rank' ordinal='0' />
+                  <column datatype='string' name='constituency' ordinal='1' />
+                  <column datatype='string' name='region' ordinal='2' />
+                  <column datatype='integer' name='winningvotes' ordinal='3' />
+                  <column datatype='string' name='secondplace' ordinal='4' />
+                  <column datatype='integer' name='secondplacevotes' ordinal='5' />
+                  <column datatype='integer' name='vote_majority' ordinal='6' />
+                  <column datatype='real' name='winningpct' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Labour Top 5 Majority Victories</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lab_top_5_majority' name='federated.0gl95880z0qgyj1bfb9e01jcgmaz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gl95880z0qgyj1bfb9e01jcgmaz'>
+            <column caption='Constituency' datatype='string' name='[constituency]' role='dimension' type='nominal' />
+            <column-instance column='[constituency]' derivation='None' name='[none:constituency:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[secondplace]' derivation='None' name='[none:secondplace:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Secondplace' datatype='string' name='[secondplace]' role='dimension' type='nominal' />
+            <column caption='Secondplacevotes' datatype='integer' name='[secondplacevotes]' role='measure' type='quantitative' />
+            <column-instance column='[secondplacevotes]' derivation='Sum' name='[sum:secondplacevotes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_majority]' derivation='Sum' name='[sum:vote_majority:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winningpct]' derivation='Sum' name='[sum:winningpct:qk]' pivot='key' type='quantitative' />
+            <column caption='Vote Majority' datatype='integer' name='[vote_majority]' role='measure' type='quantitative' />
+            <column caption='Winningpct' datatype='real' name='[winningpct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:constituency:nk]' direction='DESC' using='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]' />
+              <text column='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]' />
+              <lod column='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:winningpct:qk]' />
+              <lod column='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:secondplacevotes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:constituency:nk] / ([federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:region:nk] / [federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:secondplace:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5BE8B212-FE50-4A7C-B19F-8779FB505692}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[:Measure Names]</field>
+            <field>[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:region:nk]</field>
+            <field>[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[none:secondplace:nk]</field>
+            <field>[federated.0gl95880z0qgyj1bfb9e01jcgmaz].[sum:vote_majority:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2DF92D8B-213E-403C-BBBB-419DD24EB2CA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='124' name='Sheet 1' width='192'>
+      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
+      m9kFUAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
